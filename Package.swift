@@ -9,12 +9,12 @@ let package = Package(
     products: [
         .library(
             name: "GraphQLite",
-            targets: ["GraphQLite"]
-            ),
-        .library(
-            name: "GraphQLiteFramework",
-            targets: ["GraphQLiteFramework"]
-            )
+            targets: ["GraphQLite", "GraphQLiteFramework"]
+            )//,
+//        .library(
+//            name: "GraphQLiteFramework",
+//            targets: ["GraphQLiteFramework"]
+//            )
     ],
     targets: [
         .target(
