@@ -19,7 +19,7 @@ let package = Package(
     targets: [
         .target(
             name: "GraphQLite",
-            dependencies: ["GraphQLiteFramework"],
+            //dependencies: ["GraphQLiteFramework"],
             path: "Source/GraphQLite"
         ),
         .binaryTarget(name: "GraphQLiteFramework",
