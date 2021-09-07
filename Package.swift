@@ -11,14 +11,18 @@ let package = Package(
             name: "GraphQLite",
             targets: ["GraphQLite"]
             ),
+        .library(
+            name: "GraphQLiteFramework",
+            targets: ["GraphQLiteFramework"]
+            )
     ],
     targets: [
-//        .target(
-//            name: "GraphQLite",
-//            dependencies: ["GraphQLiteFramework"],
-//            path: "Source/GraphQLite"
-//        ),
-        .binaryTarget(name: "GraphQLite", //"GraphQLiteFramework",
+        .target(
+            name: "GraphQLite",
+            dependencies: ["GraphQLiteFramework"],
+            path: "Source/GraphQLite"
+        ),
+        .binaryTarget(name: "GraphQLiteFramework",
                       path: "Framework/GraphQLite.xcframework"
         )
     ]
